@@ -14,8 +14,8 @@ object ApplicationMain extends App {
             fallback = "thread-pool-executor"
           }
           thread-pool-executor {
-            # キューの上限なし
-            task-queue-size = -1
+            # キューの上限あり
+            task-queue-size = 5
             
             
             # Minimum number of threads to cap factor-based max number to
